@@ -1,1 +1,32 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-dark-text: #9ca3af;
+  --color-dark-text-h: #f3f4f6;
+  --color-dark-bg: #16171d;
+  --color-dark-border: #2e303a;
+  --color-dark-code-bg: #1f2028;
+  --color-dark-accent: #c084fc;
+  --color-dark-accent-bg: rgba(192, 132, 252, 0.15);
+  --color-dark-accent-border: rgba(192, 132, 252, 0.5);
+  --color-dark-social-bg: rgba(47, 48, 58, 0.5);
+  --color-dark-shadow:
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+  --color-text: #6b6375;
+  --color-text-h: #08060d;
+  --color-bg: #fff;
+  --color-border: #d1d0d3;
+  --color-code-bg: #f4f3ec;
+  --color-accent: #aa3bff;
+  --color-accent-bg: rgba(170, 59, 255, 0.1);
+  --color-accent-border: rgba(170, 59, 255, 0.5);
+  --color-social-bg: rgba(244, 243, 236, 0.5);
+  --color-shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, Consolas, monospace;
+}

@@ -1,3 +1,9 @@
+import Header from "./Header";
+
 export default function Homepage() {
-  return <div>Homepage</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
