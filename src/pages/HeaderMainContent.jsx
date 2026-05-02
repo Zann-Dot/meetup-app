@@ -6,10 +6,12 @@ export default function HeaderMainContent() {
       </h1>
 
       <div className=" py-2 px-3 text-accent bg-accent-bg border outline-0 border-accent-border rounded-3xl">
-        <select name="type_select" className="outline-0">
-          <option value="" disabled hidden selected>
-            Search Event Type
-          </option>
+        <select
+          name="type_select"
+          className="outline-0"
+          defaultValue={"Search Event Type"}
+        >
+          <option hidden>Select event type</option>
           <option value="both">Both</option>
           <option value="online">Online</option>
           <option value="offline">Offline</option>
