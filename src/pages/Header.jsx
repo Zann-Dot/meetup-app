@@ -14,7 +14,7 @@ export default function Header() {
     <nav className="p-5 bg-social-bg dark:bg-dark-code-bg shadow-sm flex justify-between items-center">
       <Link
         to="/"
-        className="text-text dark:text-dark-text font-sans text-2xl ps-7 grow-0"
+        className="text-accent dark:text-bg font-sans text-2xl ps-7 grow-0"
       >
         Meetup App
       </Link>
