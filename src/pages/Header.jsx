@@ -1,15 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router";
 
-export default function Header() {
-  const [displayDarkMode, setDisplayDarkMode] = useState(false);
-
-  const handleDarkMode = () => {
-    setDisplayDarkMode(!displayDarkMode);
-    document.documentElement.classList.toggle("dark");
-    document.body.classList.toggle("dark:bg-dark-bg");
-  };
-
+export default function Header({ displayDarkMode, handleDarkMode }) {
   return (
     <nav className="p-5 bg-social-bg dark:bg-dark-code-bg shadow-sm flex justify-between items-center">
       <Link
