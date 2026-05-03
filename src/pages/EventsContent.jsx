@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import useFetch from "../useFetch";
 
-export default function EventsContent() {
+export default function EventsContent({ filteredData }) {
   const VITE_API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
   const { data, loading, error } = useFetch(`${VITE_API_URL}/events`);
@@ -17,9 +17,9 @@ export default function EventsContent() {
         <p className="text-center text-accent font-medium">Loading...</p>
       )}
       <div className="grid grid-cols-3 gap-8">
-        {data &&
-          data.length !== 0 &&
-          data.map((e) => (
+        {filteredData &&
+          filteredData.length !== 0 &&
+          filteredData.map((e) => (
             <div key={e._id} className="static">
               <span className="absolute z-10 text-text-h dark:text-dark-text-h bg-code-bg dark:bg-dark-social-bg  rounded-xl mt-1.5 ms-1.5 px-2">
                 {e?.isOnline ? "Online" : "Offline"} Event
