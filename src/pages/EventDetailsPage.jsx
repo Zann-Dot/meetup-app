@@ -27,7 +27,11 @@ export default function EventDetailsPage({ displayDarkMode, handleDarkMode }) {
           </p>
           <div className="flex">
             <div className="w-600 h-100">
-              <img src={event?.imageUrl} alt="meetImage" className="my-4" />
+              <img
+                src={event?.imageUrl}
+                alt="meetImage"
+                className="my-4 aspect-4/3"
+              />
               <h1 className="my-4 text-2xl font-medium text-text-h dark:text-dark-text-h">
                 Event Tags:
               </h1>
