@@ -6,6 +6,7 @@ import "./App.css";
 
 function App() {
   const [displayDarkMode, setDisplayDarkMode] = useState(false);
+
   const handleDarkMode = () => {
     setDisplayDarkMode(!displayDarkMode);
     document.documentElement.classList.toggle("dark");

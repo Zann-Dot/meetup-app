@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router";
 
-export default function Header({ displayDarkMode, handleDarkMode }) {
+export default function Header({
+  displayDarkMode,
+  handleDarkMode,
+  handleSaveSearch,
+}) {
   return (
     <nav className="p-5 bg-social-bg dark:bg-dark-code-bg shadow-sm flex justify-between items-center">
       <Link
@@ -27,6 +31,7 @@ export default function Header({ displayDarkMode, handleDarkMode }) {
             className="px-1 pb-1 placeholder:text-sm text-text-h dark:text-dark-text outline-0"
             placeholder="Search by title or tags"
             id="search_bar"
+            onKeyDown={handleSaveSearch}
           />
         </div>
 

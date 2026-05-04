@@ -9,7 +9,7 @@ export default function EventDetailsPage({ displayDarkMode, handleDarkMode }) {
   const { eventId } = useParams();
 
   const event = data?.find((e) => e._id === eventId);
-  console.log(event);
+
   return (
     <>
       <Header
