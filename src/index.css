@@ -61,7 +61,15 @@
   --font-heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, Consolas, monospace;
 }
+@layer base {
+  body {
+    @apply bg-bg;
+  }
 
+  .dark body {
+    @apply bg-dark-bg;
+  }
+}
 body {
   margin: 0;
 }
